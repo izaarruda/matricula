@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logosenac.png" type="image/x-icon">
+    <script src="js/script.js"></script>
+    <title>SENAC GO</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="img/logosenac.png" alt="Descrição da imagem" width="100" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/inscricao.html">Inscrições</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/informacoes.html">Informações</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="pages/cursos.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/cursos.html">Informática Fundamental</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Fundamentos de Python</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Desenvolvedor WEB Front-End</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Assistente Administrativo</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Operador de Computador</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Administrador de Banco de Dados</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Programador de Sistemas</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Instalador de Sistemas Eletroeletrônicos e CFTV</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Técnico em Administração</a></li>
+                            <li><a class="dropdown-item" href="pages/cursos.html">Técnico em Informática</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">SENAC GO</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="E-mail" placeholder="Pesquisa..." aria-label="E-mail">
+                    <button class="btn btn-outline-primary " type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <h1>Inscreva:se</h1>
+    <div>
+        <h4>Informe sua data de nascimento?</h4>
+        <input type="date" id="dataNascimento">
+        <p id="idade"></p>
+    </div>
+    <div>
+        <h4>Informe sua renda familiar mensal?</h4>
+        <input type="number" id="renda" placeholder="Renda familiar">
+        <p id="renda2"></p>
+    </div>
+    <div>
+        <h4>Quantas pessoas moram com você?</h4>
+        <input type="number" id="moradores" placeholder="Número de moradores">
+    </div>
+    <div><br>
+        <button class="botao" onclick="matricula()">&nbsp;&nbsp;Verificar&nbsp;&nbsp;</button>
+        <p id="resultado100"></p>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

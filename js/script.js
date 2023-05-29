@@ -1,9 +1,3 @@
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">   
-<script src="js/script.js"></script>
-<body>
-        <script src="js/bootstrap.bundle.min.js"></script>
-</body>
 function matricula() {
     var dataNasc = document.getElementById("dataNascimento").value;
     var dataAtual = new Date();

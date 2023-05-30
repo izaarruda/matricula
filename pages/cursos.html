@@ -64,60 +64,113 @@
 </header>
 
 <body>
-    <h1>Inscreva:se</h1>
-    <div>
-        <h4>Informe sua data de nascimento?</h4>
-        <input type="date" id="dataNascimento">
-        <p id="idade"></p>
+    <div class="row">
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Informática Fundamental</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 60HORAS</h5>
+                <p class="card-text">Matutino e Vespertino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Fundamentos de Python</div>
+            <div class="card-body">
+                <h5 class="card-title">EAD 30HORAS</h5>
+                <p class="card-text">Vespertino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Desenvolvedor WEB Front-End</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 108HORAS </h5>
+                <p class="card-text">Noturno</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Assistente Administrativo</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 160HORAS</h5>
+                <p class="card-text">Matutino e Vespertino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Operador de Computador</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 196HORAS</h5>
+                <p class="card-text">Matutino e Vespertino</p>
+            </div>
+        </div>
     </div>
-    <div>
-        <h4>Informe sua renda familiar mensal?</h4>
-        <input type="number" id="renda" placeholder="Renda familiar">
-        <p id="renda2"></p>
-    </div>
-    <div>
-        <h4>Quantas pessoas moram com você?</h4>
-        <input type="number" id="moradores" placeholder="Número de moradores">
-    </div>
-    <div><br>
-        <button class="botao" onclick="matricula()">&nbsp;&nbsp;Verificar&nbsp;&nbsp;</button>
-        <p id="resultado100"></p>
+    <div class="row">
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Administrador de Banco de Dados</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 200HORAS</h5>
+                <p class="card-text">Matutino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Programador de Sistemas</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 200HORAS</h5>
+                <p class="card-text">Matutino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Instalador de Sistemas Eletroeletrônicos e CFTV</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 200HORAS</h5>
+                <p class="card-text">Matutino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Técnico em Administração</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 1000HORAS</h5>
+                <p class="card-text">Matutino</p>
+            </div>
+        </div>
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Técnico em Informática</div>
+            <div class="card-body">
+                <h5 class="card-title">Presencial 1200HORAS</h5>
+                <p class="card-text">Matutino</p>
+            </div>
+        </div>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h5>Sobre Nós</h5>
-            <p>A Faculdade Senac Goiás oferece cursos superiores voltados para atender as demandas da modernidade
-                tecnológica e do mundo do trabalho. Conta com uma estrutura física capaz de atender às necessidades do
-                corpo docente e discente, com acervo bibliográfico suficiente e atualizado.
-
-                A Instituição mantém instalações amplas e modernas, infra-estrutura adequada para receber a comunidade
-                acadêmica, bem como o corpo técnico e administrativo, ambientes devidamente aparelhados, dos
-                laboratórios de informática às salas de aulas, biblioteca com acervo apropriado a serviço do alunado e
-                demais ambientes, em consonância com as disposições legais e projetos pedagógicos dos cursos propostos.
+    <div class="row" id="footer">
+        <div class="col-lg-6">
+            <br>
+            <h3 class="margem">Contatos:</h3>
+            <img class="margem" src="../img/icongmail.png" width="20" height="20"><a class="margem"
+                href="atendimento@go.senac.br">atendimento@go.senac.br</a></p>
+            <img class="margem" src="../img/localizacao.jfif" width="20" height="20"><a class="margem" href="">Rua
+                31-A,
+                N° 43
+                Setor Aeroporto Goiânia - GO</a>
+            </p>
+            <img class="margem" src="../img/icontel.jfif" width="20" height="20"><a class="margem"
+                href="(62) 3219-5180">(62) 3219-5180</a>
             </p>
         </div>
-        <div class="footer-section">
-            <h5>Links úteis</h5>
-            <ul>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Inscrições</a></li>
-            </ul>
+        <div class="col-lg-6">
+            <br>
+            <h3 class="margem">Redes Socias</h3>
+            <img class="margem" src="../img/youtube.jfif" width="22" height="15"><a class="margem"
+                href="https://www.youtube.com/user/senacgoias">Youtube</a></p>
+            <img class="margem" src="../img/fcicon.jfif" width="20" height="20"><a class="margem"
+                href="https://www.facebook.com/senacgoias/">Facebook</a></p>
+            <img class="margem" src="../img/instagramicon.jfif" width="20" height="20"><a class="margem"
+                href="https://www.instagram.com/senacgoias/">Instagram</a></p><br>
         </div>
-        <div class="footer-section">
-            <h5>Contato</h5>
-            <p>Email: senacgo@gmail.com</p>
-            <p>Telefone:(62) 3309-6300</p>
-            <p>Av. Caiapó, Qd. 89, Lt. 41/49, nº 909 - St. Santa Genoveva
-                Goiânia-GO
-                CEP: 74672-400</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2023 SENAC GO. Todos os direitos reservados.</p>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30577.146776312642!2d-49.27388272568362!3d-16.669708699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef18783458d59%3A0xe7c4fabde71812c8!2sSenac%20CEP%20Cora%20Coralina!5e0!3m2!1spt-BR!2sbr!4v1685391992030!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </footer>
 

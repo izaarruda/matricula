@@ -37,7 +37,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../pages/cursos.html">Informática Fundamental</a></li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Fundamentos de Python</a></li>
-                            <li><a class="dropdown-item" href="../pages/cursos.html">Desenvolvedor WEB Front-End</a></li>
+                            <li><a class="dropdown-item" href="../pages/cursos.html">Desenvolvedor WEB Front-End</a>
+                            </li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Assistente Administrativo</a></li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Operador de Computador</a></li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Administrador de Banco de Dados</a>
@@ -63,60 +64,64 @@
 </header>
 
 <body>
-    <h1>Inscreva:se</h1>
-    <div>
-        <h4>Informe sua data de nascimento?</h4>
-        <input type="date" id="dataNascimento">
-        <p id="idade"></p>
-    </div>
-    <div>
-        <h4>Informe sua renda familiar mensal?</h4>
-        <input type="number" id="renda" placeholder="Renda familiar">
-        <p id="renda2"></p>
-    </div>
-    <div>
-        <h4>Quantas pessoas moram com você?</h4>
-        <input type="number" id="moradores" placeholder="Número de moradores">
-    </div>
-    <div><br>
-        <button class="botao" onclick="matricula()">&nbsp;&nbsp;Verificar&nbsp;&nbsp;</button>
-        <p id="resultado100"></p>
-    </div>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <h1>Sobre Nós:</h1>
+    <p>A Faculdade Senac Goiás oferece cursos superiores voltados para atender as demandas da modernidade tecnológica e
+        do mundo do trabalho. Conta com uma estrutura física capaz de atender às necessidades do corpo docente e
+        discente, com acervo bibliográfico suficiente e atualizado.
+
+        A Instituição mantém instalações amplas e modernas, infra-estrutura adequada para receber a comunidade
+        acadêmica, bem como o corpo técnico e administrativo, ambientes devidamente aparelhados, dos laboratórios de
+        informática às salas de aulas, biblioteca com acervo apropriado a serviço do alunado e demais ambientes, em
+        consonância com as disposições legais e projetos pedagógicos dos cursos propostos.</p>
+    <p>A Administração Regional do Senac de Goiás foi instalada em18 de setembro de 1947, e hoje é a mantenedora da
+        Faculdade Senac Goiás, credenciada pela Portaria MEC 100/2007 de 24 de janeiro de 2007, recredenciada pela
+        Portaria MEC 671/2014, que registra em seu processo de gênese, como marco histórico, o propósito de desenvolver
+        competências profissionais e tecnológicas empreendedoras, capazes de contribuir para o desenvolvimento
+        sustentável de Goiás.
+
+        Desde a sua criação, o SENAC Goiás disponibiliza uma programação de cursos com foco na capacitação e
+        aperfeiçoamento da população, aliada ao desenvolvimento do Estado, através da educação profissional e do ensino
+        superior.
+
+        Em mais de seis décadas dedicadas à educação, o Senac tem orgulho de ter atendido a população goiana em diversas
+        modalidades de cursos livres, técnicos, de extensão, de graduação e pós-graduação presencial e a distância. O
+        Senac desenvolve também atendimento específico para empresas, o Atendimento Corporativo, com simpósios,
+        palestras, seminários, workshops, oficinas customizadas, conforme a necessidade e particularidade de cada
+        organização.
+    </p>
 </body>
 <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h5>Sobre Nós</h5>
-            <p>A Faculdade Senac Goiás oferece cursos superiores voltados para atender as demandas da modernidade
-                tecnológica e do mundo do trabalho. Conta com uma estrutura física capaz de atender às necessidades do
-                corpo docente e discente, com acervo bibliográfico suficiente e atualizado.
-
-                A Instituição mantém instalações amplas e modernas, infra-estrutura adequada para receber a comunidade
-                acadêmica, bem como o corpo técnico e administrativo, ambientes devidamente aparelhados, dos
-                laboratórios de informática às salas de aulas, biblioteca com acervo apropriado a serviço do alunado e
-                demais ambientes, em consonância com as disposições legais e projetos pedagógicos dos cursos propostos.
+    <div class="row" id="footer">
+        <div class="col-lg-6">
+            <br>
+            <h3 class="margem">Contatos:</h3>
+            <img class="margem" src="../img/icongmail.png" width="20" height="20"><a class="margem"
+                href="atendimento@go.senac.br">atendimento@go.senac.br</a></p>
+            <img class="margem" src="../img/localizacao.jfif" width="20" height="20"><a class="margem" href="">Rua
+                31-A,
+                N° 43
+                Setor Aeroporto Goiânia - GO</a>
+            </p>
+            <img class="margem" src="../img/icontel.jfif" width="20" height="20"><a class="margem"
+                href="(62) 3219-5180">(62) 3219-5180</a>
             </p>
         </div>
-        <div class="footer-section">
-            <h5>Links úteis</h5>
-            <ul>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Inscrições</a></li>
-            </ul>
+        <div class="col-lg-6">
+            <br>
+            <h3 class="margem">Redes Socias</h3>
+            <img class="margem" src="../img/youtube.jfif" width="22" height="15"><a class="margem"
+                href="https://www.youtube.com/user/senacgoias">Youtube</a></p>
+            <img class="margem" src="../img/fcicon.jfif" width="20" height="20"><a class="margem"
+                href="https://www.facebook.com/senacgoias/">Facebook</a></p>
+            <img class="margem" src="../img/instagramicon.jfif" width="20" height="20"><a class="margem"
+                href="https://www.instagram.com/senacgoias/">Instagram</a></p><br>
         </div>
-        <div class="footer-section">
-            <h5>Contato</h5>
-            <p>Email: senacgo@gmail.com</p>
-            <p>Telefone:(62) 3309-6300</p>
-            <p>Av. Caiapó, Qd. 89, Lt. 41/49, nº 909 - St. Santa Genoveva
-                Goiânia-GO
-                CEP: 74672-400</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2023 SENAC GO. Todos os direitos reservados.</p>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30577.146776312642!2d-49.27388272568362!3d-16.669708699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef18783458d59%3A0xe7c4fabde71812c8!2sSenac%20CEP%20Cora%20Coralina!5e0!3m2!1spt-BR!2sbr!4v1685391992030!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </footer>
+
 </html>

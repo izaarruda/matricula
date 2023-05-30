@@ -4,3 +4,27 @@
     border-radius: 15px;
     padding: 8px;
 }
+
+#footer {
+    border-top: 4px solid rgb(47, 0, 255);
+    color: rgb(9, 202, 237);
+    background-color: azure;
+}
+
+.margem {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(49, 133, 186);
+}
+
+.container-fluid {
+    background-color: azure;
+}
+
+.carousel-inner {
+    width: 1900px;
+    height: 650px;
+    margin-bottom: 200px;
+    border: 5px solid black;
+    border-radius: 10px;
+}

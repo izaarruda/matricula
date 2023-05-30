@@ -37,7 +37,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../pages/cursos.html">Informática Fundamental</a></li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Fundamentos de Python</a></li>
-                            <li><a class="dropdown-item" href="../pages/cursos.html">Desenvolvedor WEB Front-End</a></li>
+                            <li><a class="dropdown-item" href="../pages/cursos.html">Desenvolvedor WEB Front-End</a>
+                            </li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Assistente Administrativo</a></li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Operador de Computador</a></li>
                             <li><a class="dropdown-item" href="../pages/cursos.html">Administrador de Banco de Dados</a>
@@ -63,60 +64,121 @@
 </header>
 
 <body>
-    <h1>Inscreva:se</h1>
-    <div>
-        <h4>Informe sua data de nascimento?</h4>
-        <input type="date" id="dataNascimento">
-        <p id="idade"></p>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Inscrições Para o Vestibular:</h1>
+        </div>
     </div>
     <div>
-        <h4>Informe sua renda familiar mensal?</h4>
-        <input type="number" id="renda" placeholder="Renda familiar">
-        <p id="renda2"></p>
+        <form id="form1" class="was-validated">
+            <section class="row">
+                <div class="mb-3 col">
+                    <label for="1name">Nome:</label>
+                    <input required type="text" id="1name" class="form-control">
+                    <label for="2name">Sobrenome:</label>
+                    <input required type="text" id="2name" class="form-control">
+                </div>
+                <div class="mb-3 col">
+                    <label for="BirthDate">Data De Nascimento:</label>
+                    <input required id="BirthDate" class="form-control" type="date" />
+                    <label for="1renda">Renda Familiar Mensal:</label>
+                    <input required type="number" id="1renda" class="form-control" placeholder="R$ 0000,00">
+                </div>
+            </section>
+            <section class="row">
+                <div class="mb-3 col">
+                    <label for="1name">Nome Completo do Pai E/OU Responsável Legal:</label>
+                    <input required type="text" id="1name" class="form-control">
+                    <label for="1name">Nome Completo da Mãe E/OU Responsável Legal:</label>
+                    <input required type="text" id="1name" class="form-control">
+                </div>
+            </section>
+            <section class="row">
+                <div class="mb-3 col-6">
+                    <label for="inputemail">Endereço de E-mail:</label>
+                    <input required type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                </div>
+                <div class="mb-3 col">
+                    <label for="inputPassword">Crie uma senha:</label>
+                    <input required type="password" class="form-control" id="inputPassword" placeholder="senha">
+                </div>
+                <div class="mb-3  col">
+                    <label for="inputPassword">Repita a senha:</label>
+                    <input required type="password" class="form-control" id="inputPassword" placeholder="senha">
+                </div>
+            </section>
+            <section>
+                <div class="mb-3">
+                    <h3>Gênero:</h3>
+                    <div class="form-check  col">
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioM" required>
+                        <label class="form-check-label" for="inputRadioM">
+                            HOMEM
+                        </label>
+                    </div>
+                    <div class="form-check  col">
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioF" required>
+                        <label class="form-check-label" for="inputRadioF">
+                            MULHER
+                        </label>
+                    </div>
+                    <div class="form-check  col">
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioF" required>
+                        <label class="form-check-label" for="inputRadioF">
+                            OUTRO
+                        </label>
+                    </div>
+            </section>
     </div>
-    <div>
-        <h4>Quantas pessoas moram com você?</h4>
-        <input type="number" id="moradores" placeholder="Número de moradores">
-    </div>
-    <div><br>
-        <button class="botao" onclick="matricula()">&nbsp;&nbsp;Verificar&nbsp;&nbsp;</button>
-        <p id="resultado100"></p>
-    </div>
+    <section class="row">
+        <div class="mb-3 col">
+            <label for="inputFile" class="form-label">Escolha sua Foto De Perfil:</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple required>
+        </div>
+        <div class="mb-3 col">
+            <label for="formFileMultiple">Insira o RG/CPF:</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple required>
+        </div>
+        <div class="mb-3 col">
+            <label for="inputFile" class="form-label">Foto Atual do Comprovante de Endereço:</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple required>
+        </div>
+    </section>
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h5>Sobre Nós</h5>
-            <p>A Faculdade Senac Goiás oferece cursos superiores voltados para atender as demandas da modernidade
-                tecnológica e do mundo do trabalho. Conta com uma estrutura física capaz de atender às necessidades do
-                corpo docente e discente, com acervo bibliográfico suficiente e atualizado.
-
-                A Instituição mantém instalações amplas e modernas, infra-estrutura adequada para receber a comunidade
-                acadêmica, bem como o corpo técnico e administrativo, ambientes devidamente aparelhados, dos
-                laboratórios de informática às salas de aulas, biblioteca com acervo apropriado a serviço do alunado e
-                demais ambientes, em consonância com as disposições legais e projetos pedagógicos dos cursos propostos.
+    <div class="row" id="footer">
+        <div class="col-lg-6">
+            <br>
+            <h3 class="margem">Contatos:</h3>
+            <img class="margem" src="../img/icongmail.png" width="20" height="20"><a class="margem"
+                href="atendimento@go.senac.br">atendimento@go.senac.br</a></p>
+            <img class="margem" src="../img/localizacao.jfif" width="20" height="20"><a class="margem" href="">Rua
+                31-A,
+                N° 43
+                Setor Aeroporto Goiânia - GO</a>
+            </p>
+            <img class="margem" src="../img/icontel.jfif" width="20" height="20"><a class="margem"
+                href="(62) 3219-5180">(62) 3219-5180</a>
             </p>
         </div>
-        <div class="footer-section">
-            <h5>Links úteis</h5>
-            <ul>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Inscrições</a></li>
-            </ul>
+        <div class="col-lg-6">
+            <br>
+            <h3 class="margem">Redes Socias</h3>
+            <img class="margem" src="../img/youtube.jfif" width="22" height="15"><a class="margem"
+                href="https://www.youtube.com/user/senacgoias">Youtube</a></p>
+            <img class="margem" src="../img/fcicon.jfif" width="20" height="20"><a class="margem"
+                href="https://www.facebook.com/senacgoias/">Facebook</a></p>
+            <img class="margem" src="../img/instagramicon.jfif" width="20" height="20"><a class="margem"
+                href="https://www.instagram.com/senacgoias/">Instagram</a></p><br>
         </div>
-        <div class="footer-section">
-            <h5>Contato</h5>
-            <p>Email: senacgo@gmail.com</p>
-            <p>Telefone:(62) 3309-6300</p>
-            <p>Av. Caiapó, Qd. 89, Lt. 41/49, nº 909 - St. Santa Genoveva
-                Goiânia-GO
-                CEP: 74672-400</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2023 SENAC GO. Todos os direitos reservados.</p>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30577.146776312642!2d-49.27388272568362!3d-16.669708699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef18783458d59%3A0xe7c4fabde71812c8!2sSenac%20CEP%20Cora%20Coralina!5e0!3m2!1spt-BR!2sbr!4v1685391992030!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </footer>
+
 </html>
